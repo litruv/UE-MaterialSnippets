@@ -1,4 +1,4 @@
-# UEMatLib
+# UE Material Snippets
 
 UEMatLib is a library of materials for use in Unreal Engine. Each material comes with a preview, snippet, and description to help you choose the right one for your project.
 
