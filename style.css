@@ -299,3 +299,25 @@ footer {
 .footer-content nav a:hover {
     color: var(--primary-color);
 }
+
+.add-snippet-button {
+    display: flex;
+    align-items: center;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.add-snippet-button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.add-snippet-button:hover {
+    background-color: #218838;
+}
