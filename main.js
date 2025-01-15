@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <img class="material-preview" src="${material.preview}" alt="${material.name}">
                 <div class="material-info">
                     <h3>${material.name}</h3>
+                    <p class="author">${material.author}</p>
                     <p>${material.description}</p>
                     <div class="material-tags">
                         ${material.categories.map(cat => `<span class="tag" data-tag="${cat}">${cat}</span>`).join(' ')}

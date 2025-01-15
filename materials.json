@@ -1,8 +1,13 @@
 {
   "materials": [
     {
+      "author": "Litruv",
       "name": "Vinette",
-      "categories": ["photo", "fx", "vintage"],
+      "categories": [
+        "photo",
+        "fx",
+        "vintage"
+      ],
       "preview": "./thumbnails/vinette.png",
       "snippet": "snippets/vinette.txt",
       "description": "Adds a subtle darkened border around the edges of the image for a vintage effect."
