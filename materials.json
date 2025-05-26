@@ -11,6 +11,18 @@
       "preview": "./thumbnails/vinette.png",
       "snippet": "snippets/vinette.txt",
       "description": "Adds a subtle darkened border around the edges of the image for a vintage effect."
+    },
+    {
+      "author": "Litruv",
+      "name": "Screen Ratio Corrected UV's",
+      "categories": [
+        "screen",
+        "utillity",
+        "uv"
+      ],
+      "preview": "./thumbnails/screen_ratio_corrected_uvs.png",
+      "snippet": "snippets/screen_ratio_corrected_uvs.txt",
+      "description": "Outputs Screen UV mapping and maintain the correct screen aspect ratio."
     }
   ]
 }
