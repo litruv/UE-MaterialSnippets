@@ -35,6 +35,19 @@
       "preview": "./thumbnails/radial_distortion.png",
       "snippet": "snippets/radial_distortion.txt",
       "description": "Applies a radial distortion effect to the screen UVs, simulating lens distortion."
+    },
+    {
+      "author": "Litruv",
+      "name": "Color Mask",
+
+      "categories": [
+        "color",
+        "mask",
+        "fx"
+      ],
+      "preview": "./thumbnails/color_mask.png",
+      "snippet": "snippets/color_mask.txt",
+      "description": "Creates a mask based on if there is color in the input texture."
     }
   ]
 }
