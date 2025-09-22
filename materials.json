@@ -23,6 +23,18 @@
       "preview": "./thumbnails/screen_ratio_corrected_uvs.png",
       "snippet": "snippets/screen_ratio_corrected_uvs.txt",
       "description": "Outputs Screen UV mapping and maintain the correct screen aspect ratio."
+    },
+    {
+      "author": "Litruv",
+      "name": "Radial Distortion",
+      "categories": [
+        "fx",
+        "distortion",
+        "uv"
+      ],
+      "preview": "./thumbnails/radial_distortion.png",
+      "snippet": "snippets/radial_distortion.txt",
+      "description": "Applies a radial distortion effect to the screen UVs, simulating lens distortion."
     }
   ]
 }
