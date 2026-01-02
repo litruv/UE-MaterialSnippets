@@ -38,6 +38,7 @@ body {
 
 .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     flex: 1;
@@ -106,7 +107,7 @@ h1 {
 
 .category-button:hover {
     border-color: var(--primary-color);
-    color: var (--primary-color);
+    color: var(--primary-color);
 }
 
 .category-button.active:hover {
@@ -117,7 +118,18 @@ h1 {
     column-count: 4;
     column-gap: 20px;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    min-height: 200px;
+}
+
+[data-material-grid]:empty::after {
+    content: 'No snippets found';
+    display: block;
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 60px 20px;
+    font-size: 16px;
 }
 
 .material-card {
@@ -129,10 +141,16 @@ h1 {
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
-    transition: transform 0.2s, opacity var(--transition-duration);
+    transition: transform 0.2s, opacity var(--transition-duration), border-color 0.2s, box-shadow 0.2s;
     cursor: pointer;
     opacity: 1;
     animation: fadeIn var(--transition-duration) ease-in;
+    position: relative;
+}
+
+.material-card:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
 }
 
 .material-card.hide {
@@ -203,6 +221,11 @@ h1 {
 .tag:hover {
     background: var(--primary-color);
     color: var(--text-primary);
+}
+
+.tag:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 1px;
 }
 
 .copy-notification {
@@ -320,4 +343,111 @@ footer {
 
 .add-snippet-button:hover {
     background-color: #218838;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 16px;
+}
+
+.loading-spinner p {
+    color: var(--text-secondary);
+    font-size: var(--font-size);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border-color);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Clear Filters Button */
+.clear-filters-button {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: var(--font-size);
+}
+
+.clear-filters-button:hover {
+    background: var(--primary-color);
+    color: var(--text-primary);
+}
+
+/* Result Count */
+.result-count {
+    text-align: right;
+    color: var(--text-secondary);
+    font-size: var(--font-size);
+    margin-bottom: 20px;
+}
+
+.result-count span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1200px) {
+    [data-material-grid] {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 900px) {
+    [data-material-grid] {
+        column-count: 2;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    [data-material-grid] {
+        column-count: 1;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    .categories-filter {
+        justify-content: flex-start;
+    }
+    
+    .category-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .add-snippet-button {
+        width: 100%;
+        justify-content: center;
+    }
 }

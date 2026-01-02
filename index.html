@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unreal Engine Material Library</title>
+    <meta name="description" content="A curated library of copy-paste ready Unreal Engine material snippets. Find vignettes, scanlines, UV effects, distortions and more for your UE projects.">
+    <meta name="keywords" content="Unreal Engine, UE5, UE4, materials, shaders, HLSL, snippets, game development, visual effects">
+    <meta name="author" content="Max Litruv Boonzaayer">
+    <meta property="og:title" content="UE Material Snippets">
+    <meta property="og:description" content="A curated library of copy-paste ready Unreal Engine material snippets.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <title>UE Material Snippets</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -25,8 +32,14 @@
                         <input type="text" data-search placeholder="Search materials...">
                     </div>
                     <div class="categories-filter" data-categories></div>
+                    <button class="clear-filters-button" data-clear-filters style="display: none;">Clear Filters</button>
                 </div>
             </header>
+            <div class="loading-spinner" data-loading>
+                <div class="spinner"></div>
+                <p>Loading materials...</p>
+            </div>
+            <div class="result-count" data-result-count></div>
             <main data-material-grid></main>
         </div>
         <footer>
@@ -38,6 +51,7 @@
             </div>
         </footer>
     </div>
+    
     <script src="./main.js"></script>
 </body>
 </html>
