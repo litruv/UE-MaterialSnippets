@@ -60,6 +60,18 @@
       "preview": "./thumbnails/scanlines.gif",
       "snippet": "snippets/scanlines.txt",
       "description": "Adds horizontal scanlines to the screen UVs for a retro display effect."
+    },
+    {
+      "author": "Litruv",
+      "name": "Conical Gradient",
+      "categories": [
+        "mask",
+        "gradient",
+        "utility"
+      ],
+      "preview": "./thumbnails/conical_gradient.png",
+      "snippet": "snippets/conical_gradient.txt",
+      "description": "Conical Gradient, aligned with the top for rotation and 0-1 going clockwise."
     }
   ]
 }
